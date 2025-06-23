@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <link rel="stylesheet" href="STYLE.css"> 
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>menu</title>
+<link rel="icon" href="icono/pokebola.png">
+  <style>
+   nav{
+        background-color: #5EE08C;
+        height: 50px;
+   }
+    nav a {
+      color: black;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+    }
+
+    aside {
+      background-color: #464646;
+      width: 15%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    aside li {
+      margin: 15px 0;
+    }
+
+    aside a {
+      color: #33ccff;
+      text-decoration: none;
+    }
+
+    aside a:hover {
+      color: white;
+    }
+
+    section {
+      background-color: #777;
+      width: 85%;
+      padding: 20px;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .juego {
+      background: #555;
+      padding: 15px;
+      border-radius: 8px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .juego img {
+      width: 100px;
+      border: 2px solid white;
+      border-radius: 4px;
+    }
+
+    .descjuego {
+      text-align: left;
+    }
+
+    footer {
+      background-color: #000;
+      color: #00ff00;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="pokemenu.html">Intro Pokemon</a>
+    <a href="../toppaginas.html">Top Páginas</a>
+    <a href="../tabla.html">Tierlist</a>
+    <a href="../Juego/juego.html">Trivia de consolas</a>
+  </nav>
+
+  <main>
+    <aside>
+      <ul>
+        <li><a href="rojo.html">Pokémon Rojo/Azul </a></li>
+        <li><a href="oro.html">Pokémon Oro/Plata </a></li>
+        <li><a href="zafiro.html">Pokémon Rubi/Zafiro </a></li>
+        <li><a href="rojofuego.html">Pokémon Rojo Fuego/Verde Hoja </a></li>
+      </ul>
+    </aside>
+<!--style="background-image: url();no-repeat;background-size: cover;"-->
+    <section>
+      <div class="juego">
+        <img src="imagenespokemon/rojo1.webp" alt="Pokémon Rojo" />
+        <div class="descjuego">
+          <h3>Pokémon Rojo/Azul (1998)</h3>
+          <p>El inicio de la saga. Cuenta con 151 Pokémon originales.</p>
+        </div>
+      </div>
+
+      <div class="juego">
+        <img src="imagenespokemon/oro.webp" alt="Pokémon Oro/Plata" />
+        <div class="descjuego">
+          <h3>Pokémon Oro/Plata (1999)</h3>
+          <p>La nueva región de Johto con 100 nuevos Pokémon. Introdujo día/noche y crianza.</p>
+        </div>
+      </div>
+
+      <div class="juego">
+        <img src="imagenespokemon/saphiro.webp" alt="Pokémon Rubi/Zafiro" />
+        <div class="descjuego">
+          <h3>Pokémon Rubi/Zafiro (2002)</h3>
+          <p>En la región de Hoenn, se introdujeron los combates dobles.</p>
+        </div>
+      </div>
+
+      <div class="juego">
+        <img src="imagenespokemon/rojofuego2.webp" alt="Pokémon Rojo Fuego/Verde Hoja" />
+        <div class="descjuego">
+          <h3>Pokémon Rojo Fuego/Verde Hoja (2004)</h3>
+          <p>Remake moderno del clásico Rojo, con gráficos GameBoyAdvance y nuevas zonas.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+Página creada por Francisco Moreno
+  </footer>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Monumental de River | MilloBlogs</title>
+    <style>
+        .articulo-completo {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .imagen-destacada {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border: 3px solid #d40000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .fecha-articulo {
+            color: #777;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .titulo-articulo {
+            color: #d40000;
+            border-bottom: 2px solid #d40000;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #d40000;
+            margin-top: 1.5rem;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .datos-estadio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .dato {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #d40000;
+            text-align: center;
+        }
+        
+        .numero-grande {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d40000;
+        }
+        
+        .linea-tiempo {
+            margin: 2rem 0;
+            border-left: 3px solid #d40000;
+            padding-left: 1.5rem;
+        }
+        
+        .evento {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .evento:before {
+            content: "";
+            position: absolute;
+            left: -1.7rem;
+            top: 0.3rem;
+            width: 12px;
+            height: 12px;
+            background: #d40000;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <input type="checkbox" id="toggle-contacto" hidden>
+
+    <nav>
+        <h1>MilloBlogs</h1>
+        <div class="nav-buttons">
+            <a href="../index.html" class="boton-volver">Volver al Menú</a>
+            <label for="toggle-contacto" class="etiqueta-contacto">Contáctame</label>
+        </div>
+    </nav>
+
+    <div class="panel-contacto">
+        <label for="toggle-contacto" class="boton-cerrar">✖</label>
+        <h2 style="color: white;">Contacto</h2>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank" style="color: white;">Moreno_Fran24</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/MorenoFran24" target="_blank" style="color: white;">MorenoFran24</a></p>
+        <p><strong>Teléfono:</strong> +54 3462663578</p>
+    </div>
+
+    <iframe class="iframe-fondo" 
+      src="https://www.youtube.com/embed/HXQaM9EY5rk?si=IBuD7tA0WFphZnua&amp;autoplay=1&mute=1&loop=1&controls=0&playlist=HXQaM9EY5rk&start=65" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+
+    <div class="articulo-completo">
+        <h1 class="titulo-articulo">El Monumental: Historia del Templo Riverplatense</h1>
+        <p class="fecha-articulo">Inauguración: 26 de mayo de 1938</p>
+        
+        <p>El Estadio Monumental, oficialmente Estadio Mâs Monumental por motivos de patrocinio, es el coloso que alberga la pasión de millones de riverplatenses y el escenario de los mayores triunfos del club.</p>
+        
+        <img src="img-art/River-Monumental-1-1.jpg" alt="Vista aérea del Estadio Monumental" class="imagen-destacada">
+        
+        <h2>Datos clave</h2>
+        <div class="datos-estadio">
+            <div class="dato">
+                <div class="numero-grande">83.214</div>
+                <p>Capacidad actual</p>
+            </div>
+            <div class="dato">
+                <div class="numero-grande">1938</div>
+                <p>Año de inauguración</p>
+            </div>
+            <div class="dato">
+                <div class="numero-grande">16</div>
+                <p>Finales de Libertadores</p>
+            </div>
+            <div class="dato">
+                <div class="numero-grande">1978</div>
+                <p>Mundial disputado</p>
+            </div>
+        </div>
+        
+        <h2>Historia de su construcción</h2>
+        <div class="linea-tiempo">
+            <div class="evento">
+                <strong>1934</strong>
+                <p>River adquiere los terrenos en el barrio de Núñez por $569.403</p>
+            </div>
+            <div class="evento">
+                <strong>1935</strong>
+                <p>Comienzan las obras bajo dirección del arquitecto José Aslan</p>
+            </div>
+            <div class="evento">
+                <strong>26/05/1938</strong>
+                <p>Inauguración oficial ante Peñarol (3-1), con gol de Peucelle</p>
+            </div>
+            <div class="evento">
+                <strong>1958</strong>
+                <p>Finalización completa de las obras originales</p>
+            </div>
+            <div class="evento">
+                <strong>1978</strong>
+                <p>Remodelación para el Mundial, alcanzando 76.000 espectadores</p>
+            </div>
+            <div class="evento">
+                <strong>2019</strong>
+                <p>Nueva remodelación que lleva capacidad a más de 83.000</p>
+            </div>
+        </div>
+        
+        <h2>Características arquitectónicas</h2>
+        <ul>
+            <li>Estilo art-decó en su diseño original</li>
+            <li>Tribuna oficial con forma de herradura característica</li>
+            <li>Cuatro torres de iluminación de 45 metros de altura</li>
+            <li>Campo de juego de 105 x 68 metros</li>
+            <li>Nuevo techo cubriendo el 70% de las localidades</li>
+        </ul>
+        
+        <h2>Momentos históricos</h2>
+        <ul>
+            <li>Final de la Copa América 1946</li>
+            <li>Mundial 1978 con la final Argentina-Holanda</li>
+            <li>Final de la Libertadores 1986 (River 1-0 América)</li>
+            <li>Final de la Libertadores 1996 (River 2-0 América)</li>
+            <li>Semifinal de la Libertadores 2018 vs Grêmio</li>
+            <li>Final de la Libertadores 2023 vs Fluminense</li>
+        </ul>
+        
+        <h2>El Museo River</h2>
+        <p>Inaugurado en 2009, es el museo más moderno de Sudamérica, con:</p>
+        <ul>
+            <li>Más de 5.000 piezas históricas</li>
+            <li>Sala de trofeos interactiva</li>
+            <li>Experiencia de realidad virtual</li>
+            <li>Recorrido por los vestuarios y el túnel de acceso al campo</li>
+        </ul>
+        
+        <h2>Legado</h2>
+        <p>El Monumental no es solo un estadio, es:</p>
+        <ul>
+            <li>El estadio más grande de Argentina</li>
+            <li>Sede de la selección argentina</li>
+            <li>Escenario de conciertos internacionales</li>
+            <li>Símbolo del barrio de Núñez</li>
+            <li>El corazón de la identidad riverplatense</li>
+        </ul>
+        <div class="documental">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/5W9p6DhqYj4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="documental-info">
+                <h3> El Monumental</h3>
+                <p>Documental oficial del estadio (2023)</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h1>Página diseñada por Francisco Moreno</h1>
+        <h2 style="color: white;">09/06/2025</h2>
+    </footer>
+</body>
+</html>

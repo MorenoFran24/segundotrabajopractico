@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación de River Plate | MilloBlogs</title>
+    <style>
+        .articulo-completo {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .imagen-destacada {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border: 3px solid #d40000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .fecha-articulo {
+            color: #777;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .titulo-articulo {
+            color: #d40000;
+            border-bottom: 2px solid #d40000;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #d40000;
+            margin-top: 1.5rem;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .fundadores-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .fundador {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #d40000;
+        }
+        
+        .linea-tiempo {
+            margin: 2rem 0;
+            border-left: 3px solid #d40000;
+            padding-left: 1.5rem;
+        }
+        
+        .evento {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .evento:before {
+            content: "";
+            position: absolute;
+            left: -1.7rem;
+            top: 0.3rem;
+            width: 12px;
+            height: 12px;
+            background: #d40000;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <input type="checkbox" id="toggle-contacto" hidden>
+
+    <nav>
+        <h1>MilloBlogs</h1>
+        <div class="nav-buttons">
+            <a href="/BLOG TP2/index.html" class="boton-volver">Volver al Menú</a>
+            <label for="toggle-contacto" class="etiqueta-contacto">Contáctame</label>
+        </div>
+    </nav>
+
+    <div class="panel-contacto">
+        <label for="toggle-contacto" class="boton-cerrar">✖</label>
+        <h2 style="color: white;">Contacto</h2>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank" style="color: white;">Moreno_Fran24</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/MorenoFran24" target="_blank" style="color: white;">MorenoFran24</a></p>
+        <p><strong>Teléfono:</strong> +54 3462663578</p>
+    </div>
+
+    <iframe class="iframe-fondo" 
+      src="https://www.youtube.com/embed/HXQaM9EY5rk?si=IBuD7tA0WFphZnua&amp;autoplay=1&mute=1&loop=1&controls=0&playlist=HXQaM9EY5rk&start=65" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+
+    <div class="articulo-completo">
+        <h1 class="titulo-articulo">La Fundación de River Plate: Nace una Pasión</h1>
+        <p class="fecha-articulo">25 de mayo de 1901 - La Boca, Buenos Aires</p>
+        
+        <p>En el Día de la Patria de 1901, un grupo de jóvenes inmigrantes fundó el Club Atlético River Plate, dando origen a lo que sería la institución más grande del fútbol argentino.</p>
+        
+        <img src="img-art/fundacion.webp" alt="La Boca a principios del siglo XX" class="imagen-destacada">
+        
+        <h2>Los orígenes</h2>
+        <p>Todo comenzó cuando los jóvenes del barrio de La Boca, que solían jugar al fútbol en las calles, decidieron formalizar su pasión creando un club. La reunión fundacional se realizó en la casa de Pedro Martínez, ubicada en la calle Almirante Brown 927.</p>
+        
+        <h2>Los fundadores</h2>
+        <div class="fundadores-grid">
+            <div class="fundador">
+                <strong>Leopoldo Bard</strong>
+                <p>Primer presidente del club</p>
+            </div>
+            <div class="fundador">
+                <strong>Pedro Martínez</strong>
+                <p>Anfitrión de la reunión fundacional</p>
+            </div>
+            <div class="fundador">
+                <strong>Bernardo Messina</strong>
+                <p>Propuso el nombre "River Plate"</p>
+            </div>
+            <div class="fundador">
+                <strong>Antonio Scarpone</strong>
+                <p>Uno de los impulsores principales</p>
+            </div>
+            <div class="fundador">
+                <strong>Enrico Bard</strong>
+                <p>Hermano de Leopoldo, jugador clave</p>
+            </div>
+            <div class="fundador">
+                <strong>Victorio Capra</strong>
+                <p>Futuro dirigente importante</p>
+            </div>
+        </div>
+        
+        <h2>El nombre</h2>
+        <p>El nombre "River Plate" fue sugerido por Bernardo Messina, inspirado en los barcos que veía en el Riachuelo con la inscripción "The River Plate" (nombre en inglés del Río de la Plata).</p>
+        
+        <h2>Primeros años</h2>
+        <div class="linea-tiempo">
+            <div class="evento">
+                <strong>1901</strong>
+                <p>Fundación oficial el 25 de mayo. Primer uniforme: camisa blanca con una banda diagonal roja.</p>
+            </div>
+            <div class="evento">
+                <strong>1905</strong>
+                <p>Primer ascenso a Primera División</p>
+            </div>
+            <div class="evento">
+                <strong>1908</strong>
+                <p>Cambio definitivo a la camiseta blanca con banda roja que conocemos hoy</p>
+            </div>
+            <div class="evento">
+                <strong>1920</strong>
+                <p>Traslado del barrio de La Boca a Recoleta</p>
+            </div>
+            <div class="evento">
+                <strong>1923</strong>
+                <p>Primer título profesional

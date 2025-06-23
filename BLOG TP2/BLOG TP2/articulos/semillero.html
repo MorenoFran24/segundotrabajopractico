@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Semillero de River | MilloBlogs</title>
+    <style>
+        .articulo-completo {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .imagen-destacada {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border: 3px solid #d40000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .fecha-articulo {
+            color: #777;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .titulo-articulo {
+            color: #d40000;
+            border-bottom: 2px solid #d40000;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #d40000;
+            margin-top: 1.5rem;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .jugadores-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .jugador {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #d40000;
+            text-align: center;
+        }
+        
+        .jugador img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .decada-title {
+            color: #d40000;
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <input type="checkbox" id="toggle-contacto" hidden>
+
+    <nav>
+        <h1>MilloBlogs</h1>
+        <div class="nav-buttons">
+            <a href="../index.html" class="boton-volver">Volver al Menú</a>
+            <label for="toggle-contacto" class="etiqueta-contacto">Contáctame</label>
+        </div>
+    </nav>
+
+    <div class="panel-contacto">
+        <label for="toggle-contacto" class="boton-cerrar">✖</label>
+        <h2 style="color: white;">Contacto</h2>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank" style="color: white;">Moreno_Fran24</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/MorenoFran24" target="_blank" style="color: white;">MorenoFran24</a></p>
+        <p><strong>Teléfono:</strong> +54 3462663578</p>
+    </div>
+
+    <iframe class="iframe-fondo" 
+      src="https://www.youtube.com/embed/HXQaM9EY5rk?si=IBuD7tA0WFphZnua&amp;autoplay=1&mute=1&loop=1&controls=0&playlist=HXQaM9EY5rk&start=65" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+
+    <div class="articulo-completo">
+        <h1 class="titulo-articulo">El Semillero de River: La Cantera Más Grande de América</h1>
+        <p class="fecha-articulo">Desde los orígenes hasta la actualidad</p>
+        
+        <p>River Plate no solo es grande por sus títulos, sino también por su incomparable capacidad para formar jugadores de talla mundial. El "Semillero" es reconocido como la cantera más importante de América, forjando talentos desde las divisiones inferiores hasta el primer equipo.</p>
+        
+        <img src="img-art/juveniles.webp" alt="Jugadores de inferiores de River Plate" class="imagen-destacada">
+        
+        <h2>El Método River</h2>
+        <p>La formación en River se basa en:</p>
+        <ul>
+            <li><strong>Formación integral:</strong> Desarrollo técnico, táctico, físico y psicológico</li>
+            <li><strong>Filosofía de juego:</strong> Estilo ofensivo y posesivo desde las categorías infantiles</li>
+            <li><strong>Valores institucionales:</strong> Disciplina, compromiso y sentido de pertenencia</li>
+            <li><strong>Preparación académica:</strong> Apoyo escolar y seguimiento educativo</li>
+        </ul>
+        
+        <h2>Jugadores destacados</h2>
+        
+        <h3 class="decada-title">Leyendas Históricas</h3>
+        <div class="jugadores-grid">
+            <div class="jugador">
+                <strong>Alfredo Di Stéfano</strong>
+                <p>Considerado uno de los mejores de la historia</p>
+            </div>
+            <div class="jugador">
+                <strong>Amadeo Carrizo</strong>
+                <p>Revolucionó el puesto de arquero</p>
+            </div>
+            <div class="jugador">
+                <strong>Omar Sívori</strong>
+                <p>Crack de la delantera, Balón de Oro 1961</p>
+            </div>
+            <div class="jugador">
+                <strong>Daniel Passarella</strong>
+                <p>Capitán campeón del mundo 1978</p>
+            </div>
+            <div class="jugador">
+                <strong>Norberto Alonso</strong>
+                <p>Ídolo máximo, "Beto" para la hinchada</p>
+            </div>
+            <div class="jugador">
+                <strong>Ramón Díaz</strong>
+                <p>Goleador histórico y luego técnico</p>
+            </div>
+        </div>
+        
+        <h3 class="decada-title">Ídolos de los 90</h3>
+        <div class="jugadores-grid">
+            <div class="jugador">
+                <strong>Ariel Ortega</strong>
+                <p>"El Burrito", ídolo de los 90</p>
+            </div>
+            <div class="jugador">
+                <strong>Marcelo Gallardo</strong>
+                <p>Jugador clave y técnico legendario</p>
+            </div>
+            <div class="jugador">
+                <strong>Pablo Aimar</strong>
+                <p>El "Payasito", mago del mediocampo</p>
+            </div>
+            <div class="jugador">
+                <strong>Javier Saviola</strong>
+                <p>"El Conejo", goleador nato</p>
+            </div>
+        </div>
+        
+        <h3 class="decada-title">Generación 2000-2010</h3>
+        <div class="jugadores-grid">
+            <div class="jugador">
+                <strong>Gonzalo Higuaín</strong>
+                <p>Goleador en Europa y selección</p>
+            </div>
+            <div class="jugador">
+                <strong>Radamel Falcao García</strong>
+                <p>"El Tigre", goleador implacable</p>
+            </div>
+            <div class="jugador">
+                <strong>Fernando Cavenaghi</strong>
+                <p>Goleador nato, ídolo de River</p>
+            </div>
+            <div class="jugador">
+                <strong>Erik Lamela</strong>
+                <p>Destacado en Europa</p>
+            </div>
+        </div>
+        
+        <h3 class="decada-title">Nuevas Joyas (2010-Presente)</h3>
+        <div class="jugadores-grid">
+            <div class="jugador">
+                <strong>Julián Álvarez</strong>
+                <p>Campeón del mundo 2022</p>
+            </div>
+            <div class="jugador">
+                <strong>Enzo Fernández</strong>
+                <p>Mejor joven del Mundial 2022</p>
+            </div>
+            <div class="jugador">
+                <strong>Exequiel Palacios</strong>
+                <p>Mediocampista en Bayer Leverkusen</p>
+            </div>
+            <div class="jugador">
+                <strong>Claudio Echeverri</strong>
+                <p>"El Diablito", nueva joya del semillero</p>
+            </div>
+            <div class="jugador">
+                <strong>Franco Mastantuono</strong>
+                <p>Joven promesa de la cantera</p>
+            </div>
+            <div class="jugador">
+                <strong>Agustín Ruberto</strong>
+                <p>Goleador de las inferiores</p>
+            </div>
+        </div>
+        
+        <h2>La cantera hoy</h2>
+        <p>El predio "River Camp" en Ezeiza es un centro de alto rendimiento con:</p>
+        <ul>
+            <li>12 canchas de juego (7 de césped natural y 5 sintéticas)</li>
+            <li>Gimnasio de última generación</li>
+            <li>Residencia para jugadores del interior</li>
+            <li>Laboratorios de análisis de rendimiento</li>
+            <li>Sala de videoconferencias para análisis táctico</li>
+        </ul>
+        
+        <h2>Datos destacados</h2>
+        <ul>
+            <li>Más de 300 jugadores formados en River jugaron en primera división</li>
+            <li>50 jugadores surgidos del semillero fueron campeones del mundo</li>
+            <li>River es el club con más jugadores formados en la historia de la Selección Argentina</li>
+            <li>El 70% del plantel profesional actual surgió de las inferiores</li>
+        </ul>
+        
+        <h2>Legado</h2>
+        <p>El Semillero no solo produce futbolistas, sino que:</p>
+        <ul>
+            <li>Mantiene la identidad del club</li>
+            <li>Genera importantes ingresos por ventas</li>
+            <li>Es modelo para otras instituciones</li>
+            <li>Fortalece el vínculo emocional con la hinchada</li>
+        </ul>
+                <div class="documental">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/8JhQq7aC4tE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="documental-info">
+                <h3> La Fábrica de Talentos</h3>
+                <p>El semillero de River (2022)</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h1>Página diseñada por Francisco Moreno</h1>
+        <h2 style="color: white;">09/06/2025</h2>
+    </footer>
+</body>
+</html>

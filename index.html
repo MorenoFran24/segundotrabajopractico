@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkTree</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(45deg, #d4f7d4, #c3e8ff, #f7d4f7);
+            background-size: 300% 300%;
+            animation: gradient 15s ease infinite;
+            text-align: center;
+            padding: 20px;
+            color: #4a2c82;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px dashed #ff6b6b;
+            animation: spin 20s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .title {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            color: #ff6b6b;
+        }
+        
+        .link {
+            display: block;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(5px);
+            color: #4a2c82;
+            padding: 18px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            border: 2px solid #ff6b6b;
+            transition: all 0.5s ease;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .link:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 8px 8px 20px rgba(0,0,0,0.15);
+        }
+        
+        .emoji {
+            font-size: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #4a2c82;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="yo-foto-tp.jpg" alt="Foto de perfil" class="profile-img">
+        
+        <h1 class="title">✨ Mis Enlaces ✨</h1>
+        
+        <a href="BLOG TP2/BLOG TP2/index.html" class="link" target="_blank">
+            <span class="emoji"></span> Blog 
+        </a>
+        
+        <a href="identikit-final-main/index.html" class="link" target="_blank">
+            <span class="emoji"></span> Identikit 
+        </a>
+        
+        <a href="https://github.com/MorenoFran24" class="link" target="_blank">
+            <span class="emoji"></span> GitHub 
+        </a>
+        
+        <div class="footer">
+            Hecho por Francisco Moreno
+        </div>
+    </div>
+</body>
+</html>
